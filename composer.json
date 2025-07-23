@@ -1,0 +1,37 @@
+{
+    "name": "ivanvovchok/auth_service",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Config\\": "config/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ivan Vovchok",
+            "email": "elvovchok@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.4",
+        "ext-pdo": "*",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.84",
+        "phpunit/phpunit": "^12.2",
+        "phpstan/phpstan": "^2.1"
+    },
+    "scripts": {
+        "start": "php -S localhost:8000 -t public",
+        "test": "phpunit",
+        "phpstan": "phpstan analyse",
+        "fix": "php-cs-fixer fix --config=.php-cs-fixer.dist.php"
+    }
+}

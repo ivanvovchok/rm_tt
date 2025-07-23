@@ -1,1 +1,8 @@
 .idea
+.DS_Store
+.env
+
+.php-cs-fixer.cache
+.phpunit.result.cache
+
+/vendor/
