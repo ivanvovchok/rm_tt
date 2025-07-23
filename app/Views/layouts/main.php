@@ -1,6 +1,8 @@
 <?php
 
-use App\Core\Csrf; ?>
+use App\Core\Csrf;
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
